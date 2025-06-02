@@ -1,5 +1,5 @@
 import React from 'react'
-import { Star, ShoppingCart, Smartphone, Shield, Truck, Headphones } from "lucide-react"
+import {ShoppingCart } from "lucide-react"
 import { Badge  } from "@/components/ui/badge"
 import { Button  } from "@/components/ui/button"
 

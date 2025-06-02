@@ -6,9 +6,8 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Slider } from "@/components/ui/slider"
 import { Star, ShoppingCart, Filter, SlidersHorizontal, ChevronDown, Search } from "lucide-react"
 import Image from "next/image"
-import Header from "../components/header"
-import Footer from "../components/footer"
 import { products } from "@/data/products"
+import Link from "next/link"
 
 // Sample product data
 
@@ -226,8 +225,10 @@ export default function ProductListing() {
                         </div>
 
                         <Button className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 font-semibold">
-                          <ShoppingCart className="mr-2 h-4 w-4" />
-                          Add to Cart
+                          <Link href="/cart">
+                            <ShoppingCart className="mr-2 h-4 w-4" />
+                            Add to Cart
+                          </Link>
                         </Button>
                       </div>
                     </CardContent>

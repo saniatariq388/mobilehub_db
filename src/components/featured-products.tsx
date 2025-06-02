@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { featuredPhones } from '@/data/products'
 import Image from "next/image"
-import { Star, ShoppingCart, Smartphone, Shield, Truck, Headphones } from "lucide-react"
+import { Star, ShoppingCart} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
 
@@ -82,8 +82,10 @@ export default function FeaturedProducts() {
                     </div>
 
                     <Button className="w-full bg-primary hover:bg-primary/90 font-semibold">
-                      <ShoppingCart className="mr-2 h-4 w-4" />
-                      Add to Cart
+                       <Link href="/cart">
+                        <ShoppingCart className="mr-2 h-4 w-4" />
+                        Add to Cart
+                      </Link>
                     </Button>
                   </div>
                 </CardContent>

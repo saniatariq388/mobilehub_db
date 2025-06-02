@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Smartphone, Facebook, Twitter, Instagram, Youtube, Mail } from "lucide-react"
+import { Smartphone, Facebook, Twitter, Instagram, Youtube} from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {

@@ -10,7 +10,7 @@ import { useTheme } from "next-themes"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const { theme, setTheme, resolvedTheme } = useTheme()
+  const {setTheme, resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
 
